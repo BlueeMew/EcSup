@@ -1,0 +1,49 @@
+*{
+    padding:0;
+    margin: 0;
+    overflow-x: hidden;
+}
+welcome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:rgb(0, 170, 255);
+    margin: 100px;
+}
+.cards{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.singleCard{
+    display: flex;
+    align-items: center;
+    gap:70px;
+    padding: 100px;
+}
+.icon{
+    padding: 20px;
+}
+.textpart{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imageLeft{
+    flex-direction:row-reverse;
+}
+.singleCard {
+    transition: transform 0.2s ease;
+  }
+  
+  .singleCard:hover {
+    transform: scale(1.1);
+  }
+  
+@media only screen and (max-width: 600px){
+    .singleCard{
+        padding:10px;
+        gap:10px;
+    }
+}
